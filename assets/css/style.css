@@ -21,10 +21,18 @@ body {
 }
 
 
-.col-md-6 {
+.favbands,
+.hobbies {
+  margin: 0 0 0 0;
+  float: left;
+  clear: both;
+}
+
+
+/* .col-md-6 {
   margin: 0 auto;
   float: left;
-}
+} */
 
 h1,
 h2,
@@ -223,17 +231,125 @@ input[type=submit] {
   border: 0 none;
 }
 
-/* // Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap */
+@media screen and (max-width: 980px){
 
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { ... }
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
-
-/* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) { ... }
+  body {
+    margin: 0px;
+  }
+  
+  #logo {
+    margin: 0 0 0 56px;
+      }
+  
+  nav {
+    margin-right: 56px;
+      }
+      
+  #main-container {
+    width: 650px;
+    margin-left: 56px;
+      }
+      
+      
+  #contact-form ul {
+    padding: 0;
+    list-style-type: none;
+  
+      }
+    
+  #contact-form li {
+    margin-bottom: 10px;
+      }
+  
+      
+  }
+  
+  
+  
+  @media screen and (max-width: 768px){
+  
+  
+  #logo {
+    margin: 0 0 0 18px;
+      }
+  
+  nav {
+    margin-right: 18px;
+      }
+      
+      
+  #main-container {
+    width: auto;
+    margin: 0 18px;
+      }
+      
+      
+  
+      
+  .auth-image {
+      width: 325px;
+      }
+      
+  
+  
+      
+  .work {
+    width: 48%;
+    margin: 2% auto 0;
+  }    
+     
+      .work:nth-child(even) {
+    margin-right: 4%;
+  }
+        
+      
+  }
+  
+  @media screen and (max-width: 640px){
+      
+  
+  #masthead {
+    margin: 0 0 30px;
+  }
+      
+  #logo {
+    margin: 0;
+    width: 100%;
+      }
+  
+  nav {
+      margin: 0;
+      padding: 16px;
+      width: 100%;
+      text-align: center;
+      }
+      
+  .main-section {
+    margin: 60px 0 40px;
+  
+  }
+      
+  
+  
+      
+  .auth-image {
+      width: 100%;
+      margin: 10px 0 24px;
+      }
+      
+      
+  
+      
+  .work {
+    float: none;
+    width: 100%;
+    margin: 40px auto;
+    overflow: auto;
+  }    
+     
+      .work:nth-child(even) {
+    margin-right: 0px;
+  }
+      
+      
+  }
